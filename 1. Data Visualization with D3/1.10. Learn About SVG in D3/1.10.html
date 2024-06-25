@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      svg {
+        background-color: pink;
+      }
+    </style>
+    <script src="../../modules/d3.v7.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <script>
+      const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9]
+
+      const w = 500
+      const h = 100
+
+      d3.select("body")
+        .append("svg")
+        .attr("class", "svg")
+        .style("width", w + "px")
+        .style("height", h + "px")
+    </script>
+  </body>
+</html>
