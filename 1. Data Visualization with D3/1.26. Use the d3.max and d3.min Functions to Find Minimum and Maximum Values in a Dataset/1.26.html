@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../modules/d3.v7.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <script>
+      const positionData = [[1, 7, -4],[6, 3, 8],[2, 9, 3]]
+
+      // get max value of the 3rd dimension in the dataset
+      const output = d3.max(positionData, d => d[2])
+
+      d3.select("body")
+        .append("h2")
+        .text(output)
+    </script>
+  </body>
+</html>
