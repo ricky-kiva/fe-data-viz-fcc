@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../modules/d3.v7.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <script>
+      const scale = d3.scaleLinear()
+      
+      scale
+        .domain([250, 500]) // sets the range of the dataset
+        .range([10, 150]) // sets the range on `x` axis
+
+      const output = scale(50) // calculate input relative to domain & range
+
+      d3.select("body")
+        .append("h2")
+        .text(output)
+    </script>
+  </body>
+</html>
